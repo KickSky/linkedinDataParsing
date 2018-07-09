@@ -1,5 +1,6 @@
 package linkedindataparsing
 
+
 class UrlMappings {
 
     static mappings = {
@@ -12,5 +13,7 @@ class UrlMappings {
         "/"(view:"/index")
         "500"(view:'/error')
         "404"(view:'/notFound')
+        "/login/$action?"(controller: "login")
+        "/logout/$action?"(controller: "logout")
     }
 }
